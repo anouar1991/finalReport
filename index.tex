@@ -1,0 +1,39 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage[acronym]{glossaries}
+\title{
+{automatic detection of types of pulmonary tuberculosis}\\
+{\large University of Mostaganem Abdelhamid Ibn Badis}\\
+{\includegraphics{university.png}}
+}
+\author{Noreddine Belhadj Cheikh}
+\date{Day Month Year}
+\begin{document}
+ \maketitle
+ %-------------------------------
+\chapter*{Abstract}
+\input{chapters/abstract}
+ 
+\chapter*{Dedication}
+\input{chapters/dedication}
+ 
+\chapter*{Acknowledgements}
+\input{chapters/acknowledgements}
+ 
+\tableofcontents
+%-------------------------------
+\chapter{Introduction}
+\input{chapters/introduction}
+\chapter{Pulmonary Tuberculosis and its types}
+\input{chapters/chapter1}
+\chapter{Medical Imaging and Machine Learning}
+\input{chapters/chapter2}
+\chapter{ImageCLEF TBT task}
+\input{chapters/chapter3}
+%-------------------------------
+\appendix
+\chapter{Appendix}
+\input{chapters/appendix}
+\end{document}

@@ -1,0 +1,11 @@
+\contentsline {chapter}{\numberline {1}Introduction}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{6}
+\contentsline {chapter}{\numberline {2}Pulmonary Tuberculosis and its types}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {chapter}{\numberline {3}Medical Imaging and Machine Learning}{8}
+\contentsline {chapter}{\numberline {4}ImageCLEF TBT task}{9}
+\contentsline {chapter}{\numberline {A}Appendix}{10}
