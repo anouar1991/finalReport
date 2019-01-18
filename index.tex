@@ -1,8 +1,24 @@
-\documentclass[12pt]{report}
+\documentclass[12pt,twoside]{report}
 \usepackage[utf8]{inputenc}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+%---------------------------------
 \usepackage{graphicx}
 \graphicspath{ {images/} }
-\usepackage[acronym]{glossaries}
+%---------------------------------
+\usepackage{acro}
+\input{chapters/acronymes}
+%---------------------------------
+
+%---------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LE,CE]{Chapter \thechapter}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%---------------------------------
 \title{
 {automatic detection of types of pulmonary tuberculosis}\\
 {\large University of Mostaganem Abdelhamid Ibn Badis}\\
@@ -10,21 +26,16 @@
 }
 \author{Noreddine Belhadj Cheikh}
 \date{Day Month Year}
+%--------------------------------
 \begin{document}
  \maketitle
  %-------------------------------
 \chapter*{Abstract}
 \input{chapters/abstract}
- 
-\chapter*{Dedication}
-\input{chapters/dedication}
- 
-\chapter*{Acknowledgements}
-\input{chapters/acknowledgements}
- 
+
 \tableofcontents
 %-------------------------------
-\chapter{Introduction}
+\chapter*{Introduction}
 \input{chapters/introduction}
 \chapter{Pulmonary Tuberculosis and its types}
 \input{chapters/chapter1}
@@ -33,7 +44,12 @@
 \chapter{ImageCLEF TBT task}
 \input{chapters/chapter3}
 %-------------------------------
+\newpage
 \appendix
 \chapter{Appendix}
 \input{chapters/appendix}
+\printacronyms[include-classes=abbrev,name=Abbreviations]
+\newpage
+\bibliography{bib/bib} 
+\bibliographystyle{ieeetr}
 \end{document}
