@@ -1,10 +1,11 @@
 \documentclass[12pt]{report}
 \usepackage[utf8]{inputenc}
-\usepackage[a4paper,width=170mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[a4paper,width=160mm,top=25mm,bottom=25mm]{geometry}
 %---------------------------------
 \usepackage{graphicx}
 \usepackage{subcaption}
-\captionsetup[subfigure]{labelformat=empty}
+\usepackage[font=footnotesize]{caption}
+\captionsetup{justification=centering, labelfont=sc, labelsep=endash}
 \graphicspath{ {images/} }
 %---------------------------------
 \usepackage{acro}
@@ -21,7 +22,7 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 %---------------------------------
-\title{
+\title{ 
 {automatic detection of types of pulmonary tuberculosis}\\
 {\large University of Mostaganem Abdelhamid Ibn Badis}\\
 {\includegraphics{university.png}}
@@ -43,9 +44,10 @@
 \input{chapters/chapter1}
 \chapter{Medical Imaging and Machine Learning}
 \input{chapters/chapter2}
-\chapter{ImageCLEF TBT task}
+\chapter{Tuberculosis severity scoring using machine learning}
 \input{chapters/chapter3}
 %-------------------------------
+
 \newpage
 \appendix
 \chapter{Appendix}
