@@ -22,16 +22,10 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 %---------------------------------
-\title{ 
-{automatic detection of types of pulmonary tuberculosis}\\
-{\large University of Mostaganem Abdelhamid Ibn Badis}\\
-{\includegraphics{university.png}}
-}
-\author{Noreddine Belhadj Cheikh}
-\date{Day Month Year}
+
 %--------------------------------
 \begin{document}
- \maketitle
+ \input{chapters/titlePage}
  %-------------------------------
 \chapter*{Abstract}
 \input{chapters/abstract}
@@ -46,6 +40,8 @@
 \input{chapters/chapter2}
 \chapter{Tuberculosis severity scoring using machine learning}
 \input{chapters/chapter3}
+\chapter{General Conclusion}
+\input{chapters/conclusion}
 %-------------------------------
 
 \newpage
@@ -53,6 +49,8 @@
 \chapter{Appendix}
 \input{chapters/appendix}
 \printacronyms[include-classes=abbrev,name=Abbreviations]
+\listoffigures
+\listoftables
 \newpage
 \bibliography{bib/bib} 
 \bibliographystyle{ieeetr}
