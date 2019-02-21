@@ -15,12 +15,7 @@
 %---------------------------------
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhead{}
-\fancyfoot{}
-\fancyfoot[LE,RO]{\thepage}
-\fancyfoot[LE,CE]{Chapter \thechapter}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+
 %---------------------------------
 
 %--------------------------------
@@ -33,6 +28,7 @@
 \tableofcontents
 %-------------------------------
 \chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 \input{chapters/introduction}
 \chapter{Pulmonary Tuberculosis and its types}
 \input{chapters/chapter1}
@@ -40,14 +36,12 @@
 \input{chapters/chapter2}
 \chapter{Tuberculosis severity scoring using machine learning}
 \input{chapters/chapter3}
-\chapter{General Conclusion}
+\chapter*{General Conclusion}
+\addcontentsline{toc}{chapter}{General Conclusion}
 \input{chapters/conclusion}
 %-------------------------------
 
 \newpage
-\appendix
-\chapter{Appendix}
-\input{chapters/appendix}
 \printacronyms[include-classes=abbrev,name=Abbreviations]
 \listoffigures
 \listoftables
