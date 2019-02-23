@@ -14,19 +14,23 @@ The dataset contains 335 chest 3D CT images with an image size per slice of 512*
 In 2018 there were 7 teams that participated and submitted their result in the SVR task. Each team used its own approach to build a solution for the SVR task. the participants were allowed to submit up to 10 runs for the task. A run consists of submission
 of the results of the developed model when applied on a test set provided by imageCLEF. The runs submitted for the severity scoring subtask were evaluated in two ways. One used the original severity scores from 1 to 5 and the task was to predict those numerical scores as precise as possible (a regression problem). Here, Root Mean Square Error (RMSE) was computed between the ground truth severity and the predicted scores provided by the participants. Alternatively, the original severity score was transformed into two classes, where scores from 1 to 3 corresponded to ”high severity” and the 4 and 5 scores corresponded to the ”low severity” class. In this case, the participants had to provide the probability of TB cases to belong to the ”high severity” class. The corresponding results were evaluated using AUC. in this section we present the 3 top performing approaches in terms of Root Mean Squared Error (RMSE) along with the approach used by MostaganemFSEI team.
 \paragraph{}
-Top \acs{rmse} achieved was 0.7840, by the team UIIP\_BioMed with a single run. A Coder-Decoder Convolutional Neural Network trained on a third-party dataset of 149 CT scans with lesions labeled by a qualified radiologist was used as a Lesion-based TB-descriptor extraction method. The lesion-based TB-descriptors extracted from the patients \acs{ct} scans were used to generate a random forest of 100 trees as a classifier\cite{lesionBased}.This approach had the best \acs{rmse} 0.7840 and an AUC of 0.7708. The second best \acs{rmse} was 0.8513, achieved by the team MedGIFT among 9 runs. A graph model of the lung based on regional 3D texture features was used in an \acs{svm} classifier \cite{textureBased}. This method resulted in a better \acs{auc} than the previous approach.VISTA@UEvora team ranked 3rd with an \acs{rmse} of 0.8883 among 7 runs. The team used a 3D modeling approach with the multi-layer perceptron algorithm.
-Finally, the team MostaganemFSEI used an approach that consists in extracting a single image semantic descriptor for each CT scan/patient instead of considering all the slices as separate samples \cite{semanticDescriptor}. The semantic descriptor was then passed as an input to bagging of a set of Random forest learners to perform a hierarchical classification of the severity score.By this approach, the team achieved an \acs{rmse} of 0.9721 and an \acs{auc} of 0.5987.
+Top \acs{rmse} achieved was 0.7840, by the team UIIP\_BioMed with a single run. A Coder-Decoder Convolutional Neural Network trained on a third-party dataset of 149 CT scans with lesions labeled by a qualified radiologist was used as a Lesion-based TB-descriptor extraction method. The lesion-based TB-descriptors extracted from the patients \acs{ct} scans were used to generate a random forest of 100 trees as a classifier\cite{lesionBased}. This approach had the best \acs{rmse} 0.7840 and an AUC of 0.7708. The second best \acs{rmse} was 0.8513, achieved by the team MedGIFT among 9 runs. A graph model of the lung based on regional 3D texture features was used in an \acs{svm} classifier \cite{textureBasedGraphModel}. This method resulted in a better \acs{auc} than the previous approach.VISTA@UEvora team ranked 3rd with an \acs{rmse} of 0.8883 among 7 runs. The team used a 3D modeling and further extraction of texture patterns approach with a multi-layer perceptron algorithm\cite{textureBased3DModel}.
+Finally, the team MostaganemFSEI used an approach that consists of extracting a single image semantic descriptor for each CT scan/patient instead of considering all the slices as separate samples \cite{semanticDescriptor}. The semantic descriptor was then passed as an input to bagging of a set of Random forest learners to perform a hierarchical classification of the severity score. With this approach, the team achieved an \acs{rmse} of 0.9721 and an \acs{auc} of 0.5987.
 
 \begin{table}[h]
-\scriptsize
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\textbf{Group Name} & \textbf{Run}                                 & \textbf{RMSE} & \textbf{Rank\_RMSE} & \textbf{AUC} & \textbf{Rank\_AUC} \\ \hline
-UIIP\_BioMed         & SVR\_run\_TBdescs2\_zparts3\_thrprob50\_rf100.csv & 0.7840        & 1                  & 0.7025       & 6                 \\
-MedGIFT             & SVR\_HOG\_std\_euclidean\_TST.csv                & 0.8513        & 2                  & 0.7162       & 5                 \\
-VISTA@UEvora        & SVR-Run-07-Mohan-MLP-6FTT100.txt             & 0.8883        & 3                  & 0.6239       & 21                \\
-MostaganemFSEI      & SVR\_mostaganemFSEI\_run3.txt                  & 0.9721        & 12                 & 0.5987       & 25                \\ \hline
-\end{tabular}
+\normalsize
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ll|l|l|l|l|}
+\cline{3-6}
+                                          &                                              & \multicolumn{2}{c|}{\textbf{RMSE}} & \multicolumn{2}{c|}{\textbf{AUC}} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Group Name}} & \textbf{Run}                                 & \textbf{RMSE}    & \textbf{Rank}   & \textbf{AUC}    & \textbf{Rank}   \\ \hline
+\multicolumn{1}{|l|}{UIIP\_BioMed\cite{lesionBased}}         & SVR\_run\_TBdescs2\_zparts3\_thrprob50\_rf100.csv & 0.7840           & 1               & 0.7025          & 6               \\ \hline
+\multicolumn{1}{|l|}{MedGIFT\cite{textureBasedGraphModel}}             & SVR\_HOG\_std\_euclidean\_TST.csv                & 0.8513           & 2               & 0.7162          & 5               \\ \hline
+\multicolumn{1}{|l|}{VISTA@UEvora\cite{textureBased3DModel}}        & SVR-Run-07-Mohan-MLP-6FTT100.txt             & 0.8883           & 3               & 0.6239          & 21              \\ \hline
+\multicolumn{1}{|l|}{MostaganemFSEI\cite{semanticDescriptor}}      & SVR\_mostaganemFSEI\_run3.txt                  & 0.9721           & 12              & 0.5987          & 25              \\ \hline
+\end{tabular}%
+}
 \caption{Results obtained by the top 3 participants and MostaganemFSEI team in the \acs{svr} subtask \cite{ImageCLEF:1}.}
 \label{result_table}
 \end{table}

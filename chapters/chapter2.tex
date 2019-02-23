@@ -58,7 +58,7 @@ There exist numerous supervised learning algorithms each has its strengths and w
 \subsubsection{Support Vectors Machine (\acs{svm})} 
 \paragraph{}
 A Support Vector Machine (\acs{svm}s, also support-vector networks) is a discriminative classifier formally, it constructs a hyperplane or set of hyperplanes in a high or infinite-dimensional space, which can be used for classification, regression, or other tasks like outliers detection. In other words, given labeled training data (supervised learning), the algorithm outputs an optimal hyperplane which categorizes new examples. \acs{svm}s are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis.\cite{MLSVM:1,MLSVM:2}
-\acs{svm}s are widely used in pattern recognition and classification tasks \cite{MLSVMAP:1,MLSVMAP:2,MLSVMAP:3,MLSVMAP:4,MLSVMAP:5} and nonlinear regressions \cite{MLSVMAP:6,MLSVMAP:7,MLSVMAP:8}
+\acs{svm}s are widely used in pattern recognition and classification tasks \cite{MLSVMAP:1,MLSVMAP:2,MLSVMAP:3,MLSVMAP:4,MLSVMAP:5} and nonlinear regressions \cite{MLSVMAP:6,MLSVMAP:7}
 \begin{figure}[ht]
  \includegraphics[width=8cm]{svm_illustration.png}
  \centering         
@@ -101,7 +101,6 @@ The use of an ensemble leads often to a much stronger generalization than the us
 Boosting and bagging are methods of ensemble learning which are used to improve the stability and accuracy of base learners. They're briefly described below.
 \paragraph{}{Bagging}
  stands for bootstrap aggregation which is a method for generating multiple versions of a predictor and using these to get an aggregated predictor\cite{MLELBO:1}. Random forest is a well-known example of an ensemble learning algorithm. It uses the combination of bagging technique\cite{MLRF:1} and random selection of features on the decision tree as the base learner to produce a collection of decision trees thus constructing a random decision forest. 
-
 \paragraph{Boosting} consists of iteratively learning weak classifiers with respect to a distribution and adding them to a final strong classifier. Moreover, boosting is based on the question ``Can a set of weak learners create a single strong learner?''\cite{MLELBO:1}.
 \paragraph{Stacking} it is a technique that is used to ensemble a diverse group of strong learners by training a second-level machine learning algorithm called a "meta-learner" to learn the optimal combination of predictions of the base learners.
 \subsection{Deep learning}
