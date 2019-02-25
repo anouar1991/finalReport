@@ -12,26 +12,28 @@
 \input{chapters/acronymes}
 %---------------------------------
 \usepackage{url}
+\usepackage{multirow}
 %---------------------------------
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhead{}
-% \fancyhead[RO,LE]{Thesis Title}
-\fancyfoot{}
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyhead{}
+% % \fancyhead[RO,LE]{Thesis Title}
+% \fancyfoot{}
 % \fancyfoot[LE,RO]{\thepage}
 % \fancyfoot[LO,CE]{Chapter \thechapter}
 % \renewcommand{\headrulewidth}{0.4pt}
 % \renewcommand{\footrulewidth}{0.4pt}
 %---------------------------------
-
+% \usepackage[citestyle=authoryear,backend=biber]{biblatex}
 %--------------------------------
 \begin{document}
- \input{chapters/titlePage}
  %-------------------------------
 \chapter*{Abstract}
 \input{chapters/abstract}
 
 \tableofcontents
+\newpage    
+\printacronyms[include-classes=abbrev,name=Abbreviations]
 %-------------------------------
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
@@ -54,5 +56,4 @@
 \newpage
 \bibliography{bib/bib} 
 \bibliographystyle{ieeetr}
-\printbibliography[title={Online Resources},type=online]
 \end{document}

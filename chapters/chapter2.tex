@@ -16,7 +16,7 @@ This technology is considered the safes without any recorded side effects of its
 uses a strong magnetic field and radio waves it enables an in-depth view of the inside of a joint or ligament to be seen, rather than just the outside as in the case of \acs{ct} scans and X-ray. It has risks associated with the use of a strong magnetic field where any kind of metal implant, artificial joint could be moved or heated up within the magnetic field.
 \subsection{Medical imaging Archiving and Recording} 
 \paragraph{}
-due to the nature of a medical image, storing it is different from storing regular images. Medical image data set consists typically of one or more images representing the projection of an anatomical volume onto an image plane (projection or planar imaging), a series of images representing thin slices through a volume (tomographic or multislice two-dimensional imaging), a set of data from a volume (volume or three-dimensional imaging), or multiple acquisition of the same tomographic or volume image over time to produce a dynamic series of acquisitions (four-dimensional imaging).\cite{ME:1}
+Due to the nature of a medical image, storing it is different from storing regular images. Medical image data set consists typically of one or more images representing the projection of an anatomical volume onto an image plane (projection or planar imaging), a series of images representing thin slices through a volume (tomographic or multislice two-dimensional imaging), a set of data from a volume (volume or three-dimensional imaging), or multiple acquisition of the same tomographic or volume image over time to produce a dynamic series of acquisitions (four-dimensional imaging).\cite{ME:1}
 \paragraph{}
 There exist several medical images file formats all of them sharing the goal of standardizing medical images storage and transmission. Major file formats widely used in medical imaging are Analyze, Neuroimaging Informatics Technology Initiative (Nifti), \acs{minc}, and Digital Imaging and Communications in Medicine (\acs{dicom}).
 \paragraph{Analyze}
@@ -33,10 +33,10 @@ Table \ref{me-file-format} shows a summary of file formats characteristics
 \begin{tabular}{l p{5cm} l p{5cm}}
 \hline
 \textbf{Format} & \textbf{Header}                                                                              & \textbf{Extension} & \textbf{Data types}                                                                                     \\ \hline
-Analyze & Fixed-length: 348 byte binary format                                                         & .img and .hdr & Unsigned integer (8-bit), signed integer (16-, 32-bit), float (32-, 64-bit), complex (64-bit)               \\ \hline
-Nifti   & Fixed-length: 352 byte binary formata (348 byte in the case of data stored as .img and .hdr) & .nii          & Signed and unsigned integer (from 8- to 64-bit), float (from 32- to 128-bit), complex (from 64- to 256-bit) \\ \hline
-\acs{minc}    & Extensible binary format                                                                     & .mnc          & Signed and unsigned integer (from 8- to 32-bit), float (32-, 64-bit), complex (32-, 64-bit) \\ \hline
-\acs{dicom}	& Variable length binary format	                                                               & .dcm	       & Signed and unsigned integer, (8-, 16-bit; 32-bit only allowed for radiotherapy dose), float not supported
+Analyze & Fixed-length: 348 byte binary format& .img and .hdr & Unsigned integer (8-bit), signed integer (16-, 32-bit), float (32-, 64-bit), complex (64-bit)               \\ \hline
+Nifti   & Fixed-length: 352 byte binary formata (348 byte in the case of data stored as .img and .hdr) & .nii& Signed and unsigned integer (from 8- to 64-bit), float (from 32- to 128-bit), complex (from 64- to 256-bit) \\ \hline
+\acs{minc}    & Extensible binary format & .mnc& Signed and unsigned integer (from 8- to 32-bit), float (32-, 64-bit), complex (32-, 64-bit) \\ \hline
+\acs{dicom}	& Variable length binary format	  & .dcm	       & Signed and unsigned integer, (8-, 16-bit; 32-bit only allowed for radiotherapy dose), float not supported
 \end{tabular}
 \caption{Summary of file formats characteristics \cite{ME:1}}
 \label{me-file-format}
@@ -112,8 +112,10 @@ There exist many architectures involving deep learning such as deep neural netwo
 Deep neural networks have shown a state of the art performance that has beaten many \ac{ml} algorithms, especially in computer vision. Deep networks could be categorized into four major network architectures groups: Unsupervised Pretrained Networks (\acs{upn}s), Convolutional Neural Networks (\acs{cnn}s), Recurrent Neural Networks, Recursive Neural Networks\cite{DLARCH:2}.
 Widely used examples of \acs{cnn} architectures are GoogleNet\cite{GoogleNet}, ResNet\cite{ResNet}, VGGNet\cite{VggNet}, AlexNet\cite{AlexNet}.
 \subsection{Transfer learning}
+\paragraph{}
 Transfer learning is a machine learning method where a model developed and trained for a task is reused as the starting point for building and training a model on another task. Transfer learning is meaningful to be used when the target Task dataset is relatively smaller than the dataset that the model was pre-trained on and when the inputs are homogeneous, i.e, images and X-ray scans. It helps to take advantage of the pre-learned structures and features and decrease the time of training the model.
 \subsection{Evaluation metrics}
+\paragraph{}
 Evaluation metrics are used to measure the performance of a machine learning model. There exist different evaluation metrics used for benchmarking or fine-tuning a model. Classification accuracy, confusion matrix and receiver operating characteristic (\acs{roc}) are briefly described in the next section.
 \paragraph{Classification Accuracy}
 Classification Accuracy is the ratio of the number of correct predictions to the total number of input samples. It is calculated by Equation \ref{accuracy_eq}.
@@ -125,11 +127,12 @@ Accuracy =\frac{\textrm{Number of Correct predictions}}{\textrm{Total number of 
 A confusion matrix is a table that is often used to describe the performance of a classification model (or "classifier") over a set of test data for which the true values are known. In the case of a binary classifier, we get Table \ref{confusion_matrix_eg}.
 \begin{table}[h]
 \centering
-\begin{tabular}{c|c|c|}
-\cline{2-3}
-\multicolumn{1}{l|}{\textbf{}}                                                     & \textbf{\begin{tabular}[c]{@{}c@{}}Predicted\\ 0\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Predicted\\ 1\end{tabular}} \\ \hline
-\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Actual \\ 0\end{tabular}}} & TN                                                             & FP                                                             \\ \hline
-\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Actual\\ 1\end{tabular}}}  & FN                                                             & TP                                                             \\ \hline
+\begin{tabular}{ll|l|l|}
+\cline{3-4}
+                                                       &                                 & \multicolumn{2}{c|}{\textbf{Predicted}}                           \\ \cline{3-4} 
+                                                       &                                 & \multicolumn{1}{c|}{\textbf{1}} & \multicolumn{1}{c|}{\textbf{0}} \\ \hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Actual}}} & \multicolumn{1}{c|}{\textbf{1}} & TP                              & FN                              \\ \cline{2-4} 
+\multicolumn{1}{|c|}{}                                 & \multicolumn{1}{c|}{\textbf{0}} & FP                              & TN                              \\ \hline
 \end{tabular}
 \caption{A confusion matrix of a binary classification.}
 \label{confusion_matrix_eg}
@@ -140,14 +143,22 @@ A confusion matrix is a table that is often used to describe the performance of 
 \item false positives (\acs{fp}): These are cases in which the predicted class is 1, and the actual class is 0.
 \item false negatives (\acs{fn}): These are cases in which the predicted class is 0, and the actual class is 1.
 \end{itemize}
+\paragraph{Root Mean Square Error (\acs{rmse})}
+Root Mean Square Error (RMSE) is the standard deviation of the residuals (prediction errors). Residuals are a measure of how far from the regression line data points are; RMSE is a measure of how spread out these residuals are. In other words, it tells you how concentrated the data is around the line of best fit. Root mean square error is commonly used in regression analysis to verify experimental results and machine learning models. Its formula is:
+\begin{equation}
+ \mathrm { RMSE } _ { f o } = \left[ \sum _ { i = 1 } ^ { N } \left( z _ { f _ { i } } - z _ { o _ { i } } \right) ^ { 2 } / N \right] ^ { 1 / 2 }
+ \label{RMSE_formula}
+\end{equation}
+
 \paragraph{\acs{roc} curve}
 The \acs{roc} curve is created by plotting the true positive rate (TPR) against the false positive rate (FPR) which are calculated from the output of confusion matrix at various threshold settings. The true-positive rate is also known as sensitivity, recall or probability of detection in machine learning. The false-positive rate is also known as the fall-out or probability of false alarm and can be calculated as (1 − specificity).
 \section{Application of deep learning in medical imaging}
 \paragraph{}
 Recent advancements in deep learning have revolutionized medical image analysis by allowing discovering morphological and/or textural patterns in images directly from data. As deep learning models have achieved state of the art performance over different medical applications. This achievement took the attention of researcher and practitioners where many methods and frameworks gathering the field of medical imaging and deep learning were created. Niftynet is one example of the platforms that we will discuss next.
 \subsection{Niftynet}
+\paragraph{}
 NiftyNet is a deep learning platform for medical imaging built on top of The TensorFlow framework\cite{tensorflow}. It comprises several modular components that eases and abstracts the model building pipeline. The NiftyNet works by connecting four components: a Reader to load data from files, a Sampler to generate appropriate samples for processing, a Network to process the inputs, and an output handler (comprising the Loss and Optimizer during training and an Aggregator during inference and evaluation). These components are briefly depicted in Figure\ref{niftynet_components}.\cite{niftyNet}
-\begin{figure}[ht]
+\begin{figure}[h]
  \includegraphics[width=15cm]{niftynet_components.jpg}
  \centering         
  \caption{A brief overview of NiftyNet components\cite{niftyNet}.}
