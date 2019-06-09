@@ -1,0 +1,12 @@
+\paragraph{}
+We have presented in this report the description of a severity scoring system for pulmonary tuberculosis. As a first step, we conducted a literature review on TB to get a clear idea about this disease its types and impact on the environment. Then, we broadly described various concepts related to our problematic, concerning medical imaging and machine learning.
+\paragraph{}
+We also presented the work that was done in the context of the International ImageCLEF 2019 challenge concerning the tuberculosis severity scoring task, which has shown promising results.
+\paragraph{}
+We have proposed as a contribution an approach that consists of using 3 different deep learners, namely Resnet50, InceptionResnet and our deep model LungNet. We participated to test our approach in the International Challenge ImageCLEF 2019 in SVR sub-task. 
+\paragraph{}
+Using the Resnet50 deep learner We achieved an AUC of 0.6510  as our best result which is ranked 22nd out of 54 submissions. LungNet model achieved an AUC of 0.6103 ranking 33rd. We note that these results were achieved despite the lack of advanced preprocessing and filtering of slices. 
+\paragraph{}
+However, the results obtained show that this approach could be much more efficient and give more potent results if it is applied correctly. As prospects, we plan to adopt augmentation strategies and selection of learning samples. Indeed, one of the characteristics of the problem addressed is the nature of the datasets provided, which are small and noisy due to the presence of many slices that do not contain useful information. Our prioritization and sub-sampling strategies adopted in our experiments confirm that. 
+\paragraph{}
+In addition, we noticed during the downsampling of our data that the deletion or addition of certain samples had an impact on the results. On the other hand, the effective filtering of slices to keep only those that are really informative is a key idea that could further improve the performance of the system. Moreover, we noticed in our experiments that there is a difference of precision for each severity class studied which arises the hypothesis of the classes having varying difficulties to be identified by the model. Indeed, some classes are more difficult to identify than others. It is also an interesting track to study. 
