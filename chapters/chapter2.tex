@@ -4,28 +4,28 @@ Medical imaging encompasses the technologies and processes of creating visual re
 \subsection{Medical imaging technologies}
 \paragraph{}
 Common medical imaging technologies include ones which use electromagnetic radiations such as X-ray imaging and Computed Tomography (\acs{ct}) imaging, others use sound waves and magnetic field such as ultrasound an magnetic resonance imaging.
-\paragraph{X-ray imaging}
-this technology is the oldest and the most frequently used, it works on wavelengths and frequencies that can penetrate through the skin creating a visualization of the inner body. It used to detect skeletal system malfunctioning, cancer through mammography, and other diagnoses that involve the visualization of the inner body. This technique comes with risks associated with the use of X-ray radiation.
-\paragraph{\acs{ct} imaging}
-is a form of X-ray imaging that produces a \acs{3d} visualization of for diagnosis, providing greater quality and detailed imaging of the internal organs, bones, blood vessels, soft tissues within the body.
+\paragraph{X-ray imaging:}
+This technology is the oldest and the most frequently used, it works on wavelengths and frequencies that can penetrate through the skin creating a visualization of the inner body. It used to detect skeletal system malfunctioning, cancer through mammography, and other diagnoses that involve the visualization of the inner body. This technique comes with risks associated with the use of X-ray radiation.
+\paragraph{\acs{ct} imaging:}
+Is a form of X-ray imaging that produces a \acs{3d} visualization of for diagnosis, providing greater quality and detailed imaging of the internal organs, bones, blood vessels, soft tissues within the body.
 it also inherits the risk of X-ray imaging whereas the benefits exceed its risk where in many cases the use of \acs{ct} scans prevents the need for exploratory surgery.
-\paragraph{Ultrasound imaging}
-uses High-frequency sound waves that are transmitted from the probe to the body via the conducting gel, those waves then bounce back when they hit the different structures within the body and that is used to create an image for diagnosis.
+\paragraph{Ultrasound imaging:}
+Uses High-frequency sound waves that are transmitted from the probe to the body via the conducting gel, those waves then bounce back when they hit the different structures within the body and that is used to create an image for diagnosis.
 This technology is considered the safes without any recorded side effects of its usage and is the most cost-effective. Due to its low risk, it is the first choice for pregnancy.
-\paragraph{Magnetic resonance imaging}
-uses a strong magnetic field and radio waves it enables an in-depth view of the inside of a joint or ligament to be seen, rather than just the outside as in the case of \acs{ct} scans and X-ray. It has risks associated with the use of a strong magnetic field where any kind of metal implant, the artificial joint could be moved or heated up within the magnetic field.
+\paragraph{Magnetic resonance imaging:}
+Uses a strong magnetic field and radio waves it enables an in-depth view of the inside of a joint or ligament to be seen, rather than just the outside as in the case of \acs{ct} scans and X-ray. It has risks associated with the use of a strong magnetic field where any kind of metal implant, the artificial joint could be moved or heated up within the magnetic field.
 \subsection{Medical imaging Archiving and Recording} 
 \paragraph{}
 Due to the nature of a medical image, storing it is different from storing regular images. Medical image data set consists typically of one or more images representing the projection of an anatomical volume onto an image plane (projection or planar imaging), a series of images representing thin slices through a volume (tomographic or multislice two-dimensional imaging), a set of data from a volume (volume or three-dimensional imaging), or multiple acquisitions of the same tomographic or volume image over time to produce a dynamic series of acquisitions (four-dimensional imaging).\cite{ME:1}
 \paragraph{}
 There exist several medical images file formats all of them sharing the goal of standardizing medical images storage and transmission. Major file formats widely used in medical imaging are Analyze, Neuroimaging Informatics Technology Initiative (Nifti), \acs{minc}, and Digital Imaging and Communications in Medicine (\acs{dicom}).
-\paragraph{Analyze}
+\paragraph{Analyze:}
 Analysis 7.5 was created in the late 1980s as a format used by the Analyze commercial software developed at the Mayo Clinic in Rochester, MN, USA. For more than a decade, the format was the standard for post-processing medical imaging. The big point of view of the Analyze format is that it was designed for multidimensional (volume) data. Indeed, it is possible to store 3D or 4D data in a file (the fourth dimension being typically the temporal information). An Analyze 7.5 volume includes two binary files: an image file with the extension .img which contains the raw voxel data, and a header file with the extension .hdr which contains the metadata (number of pixels in the three dimensions, voxel size, and data type). The header has a fixed size of 348 bytes and is written as a structure in C programming language. Reading, and editing the header requires a utility software. The format is now considered "old" but it is still widely used and supported by many processing software, viewers, devices, and conversion utilities.\cite{ME:1}
-\paragraph{\acs{nifti}}
+\paragraph{\acs{nifti}:}
 Nifti is a file format created in the early 2000s with the intention to create a format that preserves compatibility of the Analyze format but solving its weaknesses. Nifti may be considered a revised 'Analyze' format. NIfTI uses the "empty space" in the ANALYZE 7.5 header to add several new features such as image orientation with the intention of avoiding left-right ambiguity in the brain study. In addition, Nifti includes unsupported data type in the Analyze format as an unsigned 16-bit format. Although the format also allows the storage of header and pixel data in separate files, the images are usually saved as a single '.nii' file in which the header and data are stored. pixels are merged. The header has a size of 348 bytes in the case of data storage '.hdr' and '.img' and a size of 352 bytes in the case of a single file '.nii'. This difference in size is due to the presence of four additional bytes at the end, essentially to make the size a multiple of 16, and also to provide space for storing additional metadata.\cite{NIF:1, ME:1}
-\paragraph{\acs{minc}}
+\paragraph{\acs{minc}:}
 The \acs{minc} file format was developed in 1992 to provide a flexible data format for medical imaging. The first version of the \acs{minc} format (\acs{minc}1) was based on the standard common network format (NetCDF). Subsequently, to overcome the large data file support constraint and provide new features. \acs{minc}'s development team chose to upgrade from NetCDF to Hierarchical Data Format version 5 (HDF5). This new version which is not compatible with the previous one was called \acs{minc}2.\cite{MIN:1, ME:1}
-\paragraph{\acs{dicom}}
+\paragraph{\acs{dicom}:}
 \acs{dicom} (Digital Imaging and Communications in Medicine), is the international standard for transmitting, storing, retrieving, printing, processing, and displaying medical imaging information. \acs{dicom} can only store pixel values ​​as an integer. However, it supports various types of data, including floats, to store metadata. Whenever the values ​​stored in each voxel are to be scaled, \acs{dicom} uses a scaling factor using two fields in the header defining the slope and the intercept of the linear transformation to be converted in real values. \acs{dicom} supports compressed image data through a mechanism that encapsulates a non-\acs{dicom} document into a \acs{dicom} file. The compression systems supported by \acs{dicom} are \acs{jpeg}, Run-Length Encoding (\acs{rle}), JPEG-LS, JPEG-2000, and \acs{mpeg}2 / MPEG4.\cite{DIC:1,ME:1}\\
 Table \ref{me-file-format} shows a summary of file formats characteristics
 \begin{table}[h]
@@ -99,10 +99,10 @@ The use of an ensemble leads often to a much stronger generalization than the us
 \end{figure}
 \paragraph{}
 Boosting and bagging are methods of ensemble learning which are used to improve the stability and accuracy of base learners. They're briefly described below.
-\paragraph{}{Bagging}
- stands for bootstrap aggregation which is a method for generating multiple versions of a predictor and using these to get an aggregated predictor\cite{MLELBO:1}. Random forest is a well-known example of an ensemble learning algorithm. It uses the combination of bagging technique\cite{MLRF:1} and random selection of features on the decision tree as the base learner to produce a collection of decision trees thus constructing a random decision forest. 
-\paragraph{Boosting} consists of iteratively learning weak classifiers with respect to a distribution and adding them to a final strong classifier. Moreover, boosting is based on the question ``Can a set of weak learners create a single strong learner?''\cite{MLELBO:1}.
-\paragraph{Stacking} it is a technique that is used to ensemble a diverse group of strong learners by training a second-level machine learning algorithm called a "meta-learner" to learn the optimal combination of predictions of the base learners.
+\paragraph{}{Bagging:}
+ Stands for bootstrap aggregation which is a method for generating multiple versions of a predictor and using these to get an aggregated predictor\cite{MLELBO:1}. Random forest is a well-known example of an ensemble learning algorithm. It uses the combination of bagging technique\cite{MLRF:1} and random selection of features on the decision tree as the base learner to produce a collection of decision trees thus constructing a random decision forest. 
+\paragraph{Boosting:} consists of iteratively learning weak classifiers with respect to a Distribution and adding them to a final strong classifier. Moreover, boosting is based on the question ``Can a set of weak learners create a single strong learner?''\cite{MLELBO:1}.
+\paragraph{Stacking:} it is a technique that is used to ensemble a diverse group of strong Learners by training a second-level machine learning algorithm called a "meta-learner" to learn the optimal combination of predictions of the base learners.
 \subsection{Deep learning}
 \paragraph{}
 Deep learning is a method of machine learning based on learning data patterns and representations for the goal of artificial intelligence it is also known as deep structured learning or hierarchical learning. The hierarchy of nature enables the computer to learn complicated concepts by building them out of simpler ones through the use of layers. the graphical representation of these concepts shows deep graphs, with many layers. That is why it's called deep learning.
@@ -114,16 +114,16 @@ Widely used examples of \acs{cnn} architectures are GoogleNet\cite{GoogleNet}, R
 \subsection{Transfer learning}
 \paragraph{}
 Transfer learning is a machine learning method where a model developed and trained for a task is reused as the starting point for building and training a model on another task. Transfer learning is meaningful to be used when the target Task dataset is relatively smaller than the dataset that the model was pre-trained on and when the inputs are homogeneous, i.e, images and X-ray scans. It helps to take advantage of the pre-learned structures and features and decrease the time of training the model.
-\subsection{Evaluation metrics}
+\subsection{Evaluation metrics:}
 \paragraph{}
 Evaluation metrics are used to measure the performance of a machine learning model. There exist different evaluation metrics used for benchmarking or fine-tuning a model. Classification accuracy, confusion matrix and receiver operating characteristic (\acs{roc}) are briefly described in the next section.
-\paragraph{Classification Accuracy}
+\paragraph{Classification Accuracy:}
 Classification Accuracy is the ratio of the number of correct predictions to the total number of input samples. It is calculated by Equation \ref{accuracy_eq}.
 \begin{equation}
 Accuracy =\frac{\textrm{Number of Correct predictions}}{\textrm{Total number of predictions made}}
 \label{accuracy_eq}
 \end{equation}
-\paragraph{Confusion Matrix}
+\paragraph{Confusion Matrix:}
 A confusion matrix is a table that is often used to describe the performance of a classification model (or "classifier") over a set of test data for which the true values are known. In the case of a binary classifier, we get Table \ref{confusion_matrix_eg}.
 \begin{table}[h]
 \centering
@@ -143,14 +143,14 @@ A confusion matrix is a table that is often used to describe the performance of 
 \item false positives (\acs{fp}): These are cases in which the predicted class is 1, and the actual class is 0.
 \item false negatives (\acs{fn}): These are cases in which the predicted class is 0, and the actual class is 1.
 \end{itemize}
-\paragraph{Root Mean Square Error (\acs{rmse})}
+\paragraph{Root Mean Square Error (\acs{rmse}):}
 Root Mean Square Error (RMSE) is the standard deviation of the residuals (prediction errors). Residuals are a measure of how far from the regression line data points are; RMSE is a measure of how spread out these residuals are. In other words, it tells you how concentrated the data is around the line of best fit. Root mean square error is commonly used in regression analysis to verify experimental results and machine learning models. Its formula is:
 \begin{equation}
  \mathrm { RMSE } _ { f o } = \left[ \sum _ { i = 1 } ^ { N } \left( z _ { f _ { i } } - z _ { o _ { i } } \right) ^ { 2 } / N \right] ^ { 1 / 2 }
  \label{RMSE_formula}
 \end{equation}
 
-\paragraph{\acs{roc} curve}
+\paragraph{\acs{roc} curve:}
 The \acs{roc} curve is created by plotting the true positive rate (TPR) against the false positive rate (FPR) which are calculated from the output of confusion matrix at various threshold settings. The true-positive rate is also known as sensitivity, recall or probability of detection in machine learning. The false-positive rate is also known as the fall-out or probability of false alarm and can be calculated as (1 − specificity).
 \section{Application of deep learning in medical imaging}
 \paragraph{}

@@ -1,15 +1,14 @@
-\paragraph{Introduction}
-In this chapter, we will present our contribution by describing the approach used and discussing the results of the performance of our models. The experiments described were also submitted for the ImageCLEF 2019 Tuberculosis severity scoring competition.  n addition, the work resulted in the submission of a conference paper. The ranking and the performance of the models resulted by the submissions to ImageCLEF 2019 SVR will be presented.
+\paragraph{Introduction:}In this chapter, we will present our contribution by describing the approach used and discussing the results of the performance of our models. The experiments described were also submitted for the ImageCLEF 2019 Tuberculosis severity scoring competition.  n addition, the work resulted in the submission of a conference paper. The ranking and the performance of the models resulted by the submissions to ImageCLEF 2019 SVR will be presented.
 
 \paragraph{}
-We proposed the system presented in Figure~\ref{fig:system}. The latter goes through two essential steps: input data pre-processing and learning a classification model. A third optional step is added in order to improve the performance of the first learning step. The latter includes a second learning stage by using a recurrent neural network (LSTM) or by generating semantic features and exploiting them through a learner or deep learner. We will detail our proposed system in the following.
+We proposed the system presented in Figure~\ref{fig:system}. The latter goes through two essential steps: input data pre-processing and learning a classification model. We will detail our proposed system in the following.
 \begin{figure}[h!]
-\includegraphics[width=\textwidth,height=6cm]{system.pdf}
+\includegraphics[width=\textwidth]{system.png}
 \caption{The architecture of the overall proposed system} 
 \label{fig:system}
 \end{figure}
 
-\subsection{Input data pre-processing}
+\section{Input data pre-processing}
 \label{preprocess}
 3D CT scans are provided in compressed Nifti format. Firstly, we decompress the files and extract the slices. In the end, we have three sets of slices corresponding to the three dimensions of the 3D image. For each dimension and for each Nifti image we obtain a number of slices ranging according to the dimension considered (512 images for the $Y$ and $X$ dimensions, from 40 to 250images for the $Z$ dimension).
 \paragraph{}
@@ -21,17 +20,15 @@ After choosing the dimension to consider, we propose to filter the slices of eac
 \caption{The architecture of the overall proposed system} 
 \label{fig:preprocess}
 \end{figure}
-\paragraph{Automatic supervised filtering}
-in this approach, we select a set of patients from each of the considered classes (the five degrees of severity for the SVR task). Then, a human expert selects for each patient, the slices likely to contain relevant information indicating the presence of Tuberculosis. The resulting set of slices constitutes a filtering group. Given a new patient, we compare each of its slices to the filtering group by calculating a distance measure:  a weighted sum of distances between the slice and those of the filtering group. We selected at the end $N$ slices that are judged to be the most similar to the filtering group. So, in the end, each patient is represented by the $N$ filtered slices instead of all its extracted images. We think that this would reduce the noise introduced by the consideration of all slices. We tested in our contributions the value N=10.
+\paragraph{Automatic supervised filtering:}In this approach, we select a set of patients from each of the considered classes (the five degrees of severity for the SVR task). Then, a human expert selects for each patient, the slices likely to contain relevant information indicating the presence of Tuberculosis. The resulting set of slices constitutes a filtering group. Given a new patient, we compare each of its slices to the filtering group by calculating a distance measure:  a weighted sum of distances between the slice and those of the filtering group. We selected at the end $N$ slices that are judged to be the most similar to the filtering group. So, in the end, each patient is represented by the $N$ filtered slices instead of all its extracted images. We think that this would reduce the noise introduced by the consideration of all slices. We tested in our contributions the value N=10.
 
-\paragraph{Automatic unsupervised filtering}
-we noticed that there is usually a maximum of 50/60 slices visually informative. Since the slices are ordered, these most informative slices are usually at the center of the list. We propose then to keep only the $N$ middle ones. This is not optimal but we opted for this choice for a fully automatic and unsupervised approach. This choice can be improved by performing manual filtering with the intervention of a human expert, preferably with medical skills on TB disease.
+\paragraph{Automatic unsupervised filtering:}We noticed that there is usually a maximum of 50/60 slices visually informative. Since the slices are ordered, these most informative slices are usually at the center of the list. We propose then to keep only the $N$ middle ones. This is not optimal but we opted for this choice for a fully automatic and unsupervised approach. This choice can be improved by performing manual filtering with the intervention of a human expert, preferably with medical skills on TB disease.
 
 Figure~\ref{fig:preprocess} summarizes the pre-processing steps.
-\subsection{Deep learning models for CT image classification}
+\section{Deep learning models for CT image classification}
 As a deep learner, we chose to use Resnet-50 architecture because of its good results in the context of the same problematic in last Tuberculosis task editions~\cite{sgeast17} and the google inceptionV3Resnet model. On the other hand, we developed a model that we called LungNet. We present more details about this model in the following section.
 
-\paragraph{LungNet Deep Learner} we proposed and developed our deep learner architecture for CT Image Analysis that we called LungNet. The input to the latter is an RGB image of size 119x119, followed by five convolutional layers and two fully connected layers. After each convolutional layer a ``relu" activation is applied followed by a local normalization and max pooling. the first, the second and third convolution blocks have dropout layers to reduce overfitting. The sigmoid activation function is applied to the output layer in order to predict values in the range of 0 to 1. Figure~\ref{fig:lungnet} illustrates the architecture of the Lungnet model.
+\paragraph{LungNet Deep Learner:}We proposed and developed our deep learner architecture for CT Image Analysis that we called LungNet. The input to the latter is an RGB image of size 119x119, followed by five convolutional layers and two fully connected layers. After each convolutional layer a ``relu" activation is applied followed by a local normalization and max pooling. the first, the second and third convolution blocks have dropout layers to reduce overfitting. The sigmoid activation function is applied to the output layer in order to predict values in the range of 0 to 1. Figure~\ref{fig:lungnet} illustrates the architecture of the Lungnet model.
 
 \begin{figure}
 %\vspace{-2cm}
@@ -54,7 +51,7 @@ We used in our experimental work the following tools:
 
 We chose to use slices of the -Z- dimension because our experiments showed that they are more suitable than dimensions -X- and -Y- and got better results.
 
-\subsubsection{Dataset:}
+\subsection{Dataset}
 The dataset used in the SVR task includes chest CT scans of TB patients along with some metadata regarding a set of 19 classes. 2 classes concern the SVR task, six other classes concern CTR task. The other values are considered as additional information regarding the patients that could be used as contextual information.
 
 Table~\ref{tab1} summarizes the number of CT scans for train and test collections.
@@ -76,28 +73,28 @@ The same dataset is given for the CTR task. The samples are labeled regarding ei
 \begin{enumerate}
 \item Target classes for SVR Task:
 \begin{enumerate}
-\item SVR\_severity (binary class: HIGH and LOW). Another label called md\_Severity is given (Five discrete values ranging from 1 to 5). We remind that values of md\_Severity (1, 2 and 3) belong to the ``HIGH" Severity class. The other two values (4 and 5) correspond to the ``LOW" Severity class.
+\item SVR\_severity (binary class : HIGH and LOW). Another label called md\_Severity is given (Five discrete values ranging from 1 to 5). We remind that values of md\_Severity (1, 2 and 3) belong to the ``HIGH" Severity class. The other two values (4 and 5) correspond to the ``LOW" Severity class.
 \end{enumerate}
 \end{enumerate}
-\subsubsection{Experimental protocol:}
+\subsection{Experimental protocol}
 
 We used the train collection provided by the organizers and we split it into two sub-collections: training and validation sets. The performed experiments are described below:
 \begin{itemize}
 
-\item \textbf{Resnet}: results of resnet50 deep learner trained on 50\% of data. Each patient was represented by 50 slices filtered using the automatic unsupervised filtering approach that was described in section~\ref{preprocess};
+\item \textbf{Resnet} : results of resnet50 deep learner trained on 50\% of data. Each patient was represented by 50 slices filtered using the automatic unsupervised filtering approach that was described in section~\ref{preprocess};
 
-\item \textbf{Lungnet}: results of LungNet deep learner trained on 80\% of data. Each patient was represented by 10 slices filtered using the automatic supervised filtering approach that was described in section~\ref{preprocess};
+\item \textbf{Lungnet} : results of LungNet deep learner trained on 80\% of data. Each patient was represented by 10 slices filtered using the automatic supervised filtering approach that was described in section~\ref{preprocess};
 
-\item \textbf{InceptionV3Resnet}: results of InceptionV3Resnet deep learner trained on 80\% of data. Each patient was represented by 50 slices filtered using the automatic unsupervised filtering approach that was described in section~\ref{preprocess};
+\item \textbf{InceptionV3Resnet} : results of InceptionV3Resnet deep learner trained on 80\% of data. Each patient was represented by 50 slices filtered using the automatic unsupervised filtering approach that was described in section~\ref{preprocess};
 \end{itemize}
 
 In the case of Resnet50 and InceptionV3Resnet models, a hierarchical classification problem was considered.whereas, in the case of LungNet model, it was a direct binary classification.
-\paragraph{Hierarchical classification}firstly, the probabilities of the 5 classes were generated by the model for n slice of the patient's CT scan. We will end up with a list of arrays holding the 5 class probabilities for each n slice. Then, an Argmax function is applied to each probability array to get the highly predicted class for each slice. This will result in a vector of values that represent the highly predicted class for each slice. we then choose the class that has the highest occurrence to be qualified as an elected class.the final step is to choose from the probability arrays list, the arrays that have the same argmax value as the elected class. Then, a column-wise mean is calculated for the list of elected arrays, resulting in a mean array of probabilities. Summing up the probabilities of 1st, 2nd and 3rd classes is what we considered as the probability of High severity class.
-\paragraph{Binary classification}the model was designed and trained to predict the probability of High severity class directly.
+\paragraph{Hierarchical classification:}Firstly, the probabilities of the 5 classes were generated by the model for n slice of the patient's CT scan. We will end up with a list of arrays holding the 5 class probabilities for each n slice. Then, an Argmax function is applied to each probability array to get the highly predicted class for each slice. This will result in a vector of values that represent the highly predicted class for each slice. we then choose the class that has the highest occurrence to be qualified as an elected class. The final step is to choose from the probability arrays list, the arrays that have the same argmax value as the elected class. Then, a column-wise mean is calculated for the list of elected arrays, resulting in a mean array of probabilities. Summing up the probabilities of 1st, 2nd and 3rd classes is what we considered as the probability of High severity class.
+\paragraph{Binary classification:}The model was designed and trained to predict the probability of High severity class directly.
 
 Our tools and scripts used in our experiments are accessible in~\cite{anouargit}.
 
-\subsubsection{Results:}
+\subsection{Results}
 
 Table \ref{rsrs} shows the results in terms of AUC and accuracy obtained by our experiments on the evaluation performed by the ImageCLEF committee on test collection and our validation data.
 \begin{table}
@@ -108,7 +105,7 @@ Table \ref{rsrs} shows the results in terms of AUC and accuracy obtained by our 
           & Validation      & Test        & Validation    & Test     & \multicolumn{2}{l|}{} \\ \hline
 \textbf{Resnet50}  & 0.6300            & 0.6154      & 0.3400          & 0.6510   & \multicolumn{2}{l|}{22}                                              \\ \hline
 \textbf{LungNet}   & 0.5220           & 0.6103      & 0.5260         & 0.5983   & \multicolumn{2}{l|}{33}                                              \\ \hline
-\textbf{InceptionV3Resnet} & 0.5           & 0.4701      & 0.4431         & 0.4933   & \multicolumn{2}{l|}{ 48} \\ \hline
+\textbf{InceptionV3Resnet} & 0.5000        & 0.4701      & 0.4431         & 0.4933   & \multicolumn{2}{l|}{ 48} \\ \hline
 
 \end{tabular}
 \caption{Results on validation data and test set for SVR task (ImageClef submissions)}
