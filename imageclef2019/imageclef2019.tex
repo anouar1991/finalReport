@@ -72,9 +72,9 @@ The remainder of this article is organized as follows. Section 2 describes the t
 ImageCLEF 2019~\cite{ImageCLEF19} is an evaluation campaign that is being organized as part of the CLEF initiative labs. This campaign offers several research tasks that welcome participation from teams around the world. For the 2019 edition, ImageCLEF organises four main tasks: ImageCLEFcoral, ImageCLEFlifelog, ImageCLEFmedical and ImageCLEFsecurity. In this work, we focus on the Tuberculosis task that takes part in the ImageCLEFmedical challenge. ImageCLEFmed Tuberculosis task includes two sub-tasks: Severity Scoring (SVR) and CT Report (CTR) that we describe in the following.
 
 \subsection{SVR and CTR Tasks description}
-In this paper, we focus on our participation in the SVR and the CTR sub-tasks. The main objective of these two challenges is the automatic analysis of Tuberculosis CT scans. In both tasks, the same data collections are used, one corpus for training and another set for test. The data is provided as 3D CT scans. All the CT images are stored in NIFTI file format with ``nii.gz" extension file (gzipped .nii files). For each of the three dimensions of the CT image, we find a number of slices varying according to the dimension considered (512 images for the $Y$ and $X$ dimensions, from 40 to 250 images for the $Z$ dimension). Each slice has a size of about 512$\times$128 pixels for the $X$ and $Y$ dimensions and 512$\times$512 pixels for the $Z$ dimension.\\
+In this paper, we focus on our participation in the SVR and the CTR sub-tasks. The main objective of these two challenges is the automatic analysis of Tuberculosis CT scans. In both tasks, the same dataset is used, one corpus for training and another one for testing. The data is provided as 3D CT scans. All the CT images are stored in NIFTI file format with ``nii.gz" extension file (gzipped .nii files). For each of the three dimensions of the CT image, we find a number of slices varying according to the dimension considered (512 images for the $Y$ and $X$ dimensions, from 40 to 250 images for the $Z$ dimension). Each slice has a size of about 512$\times$128 pixels for the $X$ and $Y$ dimensions and 512$\times$512 pixels for the $Z$ dimension.\\
 
-A training collection is provided at the beginning of the task with its ground-truth (labels of samples). Participants prepare and train their systems on this dataset. A test collection is provided at a later date. Participants interrogate their system and return their predictions to the organizers' committee. An evaluation is performed by the latter to compare the performance of the submitted systems.
+A training collection is provided at the beginning of the task with its ground-truth (labels of samples). Participants prepare and train their systems on this dataset. A test collection is provided at a later date. Participants interrogate their system and submit their predictions to the organizers' committee. An evaluation is performed by the latter to compare the performance of the participants' predictions submissions.
 
 \subsubsection{SVR task}
 aims to predict the degree of severity of TB cases. Given a CT scan of TB patient, the main goal is to predict the severity of his illness based on his 3D CT scan. The degree of severity is modeled according to 5 discrete values: from 1 (``critical/very bad") to 5 (``very good"). The score value is simplified so that values 1, 2 and 3 correspond to ``high severity" class, and values 4 and 5 correspond to ``low severity".
@@ -83,15 +83,15 @@ The classification problem is evaluated using two measures: 1) Area Under ROC-cu
 
 \subsubsection{CT Report task} has as objective to automatically generate a report based on the patient's CT scan. This report should include the following six pieces of information in the binary form (0 or 1):
 \begin{enumerate}
- \item is the left lung affected ?
- \item is the right lung affected ? 
+ \item is the left lung affected?
+ \item is the right lung affected? 
 \item the presence of calcifications;
  \item the presence of caverns;
   \item the presence of pleurisy;
  \item the lung capacity decrease.
 \end{enumerate}
 
-This task is considered as a multi-binary classification problem (6 binary findings). The ranking of this task is done first by average AUC and then by min AUC (both over the 6 CT findings).
+This task is considered as a multilabel classification problem (6 binary findings). The ranking of this task is done first by average AUC and then by min AUC (both over the 6 CT findings).
 
 \section{Our contributions}
 \label{contribution}
