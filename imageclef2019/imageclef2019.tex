@@ -307,13 +307,13 @@ Although the results achieved by our submissions are not well ranked compared to
 \subsection{CTR task}
 \subsubsection{Experimental protocol:}
 
-We trained in a first step our deep models (Resnet and Lungnet). Secondly, we generated the semantic descriptors following the approach described in section~\ref{contribution}. We treated the problematic as a multi-class problem in the first learning stage and as a binary classification problem in the second learning step. We used in the latter SVM as a binary classifier. We optimized its parameters independently for each target class.\\
+We trained in a first step our deep models (Resnet and Lungnet). Secondly, we generated the semantic descriptors following the approach described in section~\ref{contribution}. We treated the problematic as a multilabel classification problem in the first learning stage and as a binary classification problem in the second learning stage. We used in the latter SVM as a binary classifier. We optimized its parameters independently for each target class.\\
 
 We submitted three main runs:
 \begin{enumerate}
 \item  \textbf{CTR\_FSEI\_run1}:  results of LungNet trained on 50\% of training data. Each patient was represented by 10 slices filtered using the automatic supervised filtering approach that was described in section~\ref{preprocess};
 \item  \textbf{CTR\_FSEI\_run2} :  results of LungNet trained on 70\% of training data. Each patient was represented by 50 slices filtered using the automatic unsupervised filtering approach that was described in section~\ref{preprocess};
-\item  \textbf{CTR\_FSEI\_run5}: SVM using semantic features. The latter are extracted using Resnet-50 as deep learner. Each patient was represented by 10 slices filtered using the automatic supervised filtering approach that was described in section~\ref{preprocess}.\\
+\item  \textbf{CTR\_FSEI\_run5}: SVM using semantic features that are extracted using Resnet-50. Each patient was represented by 10 slices filtered using the automatic supervised filtering approach that was described in section~\ref{preprocess}.\\
 \end{enumerate}
 
 Our tools and scripts used in our experiments are accessible in~\cite{anouargit}.
@@ -329,11 +329,11 @@ Table~\ref{tab:resultstestctr} shows the results (in terms of Average-AUC and Mi
 \label{tab:resultstestctr}
 \begin{tabular}{|l||c||c||c|}
 \hline
-Runs					&	Mean AUC	&	Min AUC	&	Rank		\\
+Runs                    &    Mean AUC    &    Min AUC    &    Rank        \\
 \hline
-CTR\_FSEI\_run1				& 	0.6273		&	0.4877	&	14		\\
-CTR\_FSEI\_run2				& 	0.6061		&	0.4471	&	17		\\
-CTR\_FSEI\_run5				& 	0.5064		&	0.4134	&	32		\\
+CTR\_FSEI\_run1                &     0.6273        &    0.4877    &    14        \\
+CTR\_FSEI\_run2                &     0.6061        &    0.4471    &    17        \\
+CTR\_FSEI\_run5                &     0.5064        &    0.4134    &    32        \\
 \hline
 \end{tabular}
 \end{table}
@@ -347,6 +347,7 @@ Figure~\ref{fig:ctrresultsauc} describes the results (in terms of Average-AUC) a
 \caption{Results and ranking in terms of Mean-AUC on test collection for CTR Task.} 
 \label{fig:ctrresultsauc}
 \end{figure}
+
 
 
 \section{Conclusion and future works}
