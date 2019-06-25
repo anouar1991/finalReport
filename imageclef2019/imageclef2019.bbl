@@ -1,0 +1,84 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{med2image}
+med2image: https://github.com/fnndsc/med2image. {L}ast check: 30/05/2018.
+
+\bibitem{anouargit}
+Resnet-50 and lungnet for tuberculosis severity scoring. mostaganem university
+  at imageclefmed 2019 : tools to run experiments.
+  \url{https://github.com/anouar1991/imageCLEFfsei/tree/master/tools/application}
+
+\bibitem{tensorflow2015}
+Abadi, M., Agarwal, A., Barham, P., Brevdo, E., Chen, Z., Citro, C., Corrado,
+  G.S., Davis, A., Dean, J., Devin, M., Ghemawat, S., Goodfellow, I., Harp, A.,
+  Irving, G., Isard, M., Jia, Y., Jozefowicz, R., Kaiser, L., Kudlur, M.,
+  Levenberg, J., Man\'{e}, D., Monga, R., Moore, S., Murray, D., Olah, C.,
+  Schuster, M., Shlens, J., Steiner, B., Sutskever, I., Talwar, K., Tucker, P.,
+  Vanhoucke, V., Vasudevan, V., Vi\'{e}gas, F., Vinyals, O., Warden, P.,
+  Wattenberg, M., Wicke, M., Yu, Y., Zheng, X.: {TensorFlow}: Large-scale
+  machine learning on heterogeneous systems (2015),
+  \url{http://tensorflow.org/}, software available from tensorflow.org
+
+\bibitem{keras2015}
+Chollet, F., et~al.: Keras. \url{https://github.com/fchollet/keras} (2015)
+
+\bibitem{ImageCLEFTB2017}
+Dicente~Cid, Y., Kalinovsky, A., Liauchuk, V., Kovalev, V., , M\"uller, H.:
+  Overview of {ImageCLEFtuberculosis} 2017 - predicting tuberculosis type and
+  drug resistances. In: CLEF2017 Working Notes. {CEUR} Workshop Proceedings,
+  CEUR-WS.org $<$http://ceur-ws.org$>$, Dublin, Ireland (September 11-14 2017)
+
+\bibitem{ImageCLEFTBoverview2019}
+Dicente~Cid, Y., Liauchuk, V., Klimuk, D., Tarasau, A., Kovalev, V., M\"uller,
+  H.: Overview of {ImageCLEFtuberculosis} 2019 - automatic ct-based report
+  generation and tuberculosis severity assessment. In: CLEF2019 Working Notes.
+  {CEUR} Workshop Proceedings, CEUR-WS.org $<$http://ceur-ws.org$>$, Lugano,
+  Switzerland (September 9-12 2019)
+
+\bibitem{ImageCLEFTB2018}
+Dicente~Cid, Y., Liauchuk, V., Kovalev, V., , M\"uller, H.: Overview of
+  {ImageCLEFtuberculosis} 2018 - detecting multi-drug resistance, classifying
+  tuberculosis type, and assessing severity score. In: CLEF2018 Working Notes.
+  {CEUR} Workshop Proceedings, CEUR-WS.org $<$http://ceur-ws.org$>$, Avignon,
+  France (September 10-14 2018)
+
+\bibitem{HamadiY18}
+Hamadi, A., Yagoub, D.E.: Imageclef 2018: Semantic descriptors for tuberculosis
+  {CT} image classification. In: Working Notes of {CLEF} 2018 - Conference and
+  Labs of the Evaluation Forum, Avignon, France, September 10-14, 2018. (2018),
+  \url{http://ceur-ws.org/Vol-2125/paper\_82.pdf}
+
+\bibitem{lstm1997}
+Hochreiter, S., Schmidhuber, J.: Long short-term memory. Neural computation
+  \textbf{9}(8),  1735--1780 (1997)
+
+\bibitem{ImageCLEF19}
+Ionescu, B., M\"uller, H., P\'{e}teri, R., Cid, Y.D., Liauchuk, V., Kovalev,
+  V., Klimuk, D., Tarasau, A., Abacha, A.B., Hasan, S.A., Datla, V., Liu, J.,
+  Demner-Fushman, D., Dang-Nguyen, D.T., Piras, L., Riegler, M., Tran, M.T.,
+  Lux, M., Gurrin, C., Pelka, O., Friedrich, C.M., de~Herrera, A.G.S., Garcia,
+  N., Kavallieratou, E., del Blanco, C.R., Rodr\'{i}guez, C.C., Vasillopoulos,
+  N., Karampidis, K., Chamberlain, J., Clark, A., Campello, A.: {ImageCLEF
+  2019}: Multimedia retrieval in medicine, lifelogging, security and nature.
+  In: Experimental IR Meets Multilinguality, Multimodality, and Interaction.
+  Proceedings of the 10th International Conference of the CLEF Association
+  (CLEF 2019), {LNCS} Lecture Notes in Computer Science, Springer, Lugano,
+  Switzerland (September 9-12 2019)
+
+\bibitem{scikit-learn}
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
+  O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J.,
+  Passos, A., Cournapeau, D., Brucher, M., Perrot, M., Duchesnay, E.:
+  Scikit-learn: Machine learning in {P}ython. Journal of Machine Learning
+  Research  \textbf{12},  2825--2830 (2011)
+
+\bibitem{sgeast17}
+Sun, J., Chong, P., Tan, Y.X.M., Binder, A.: Imageclef 2017: Imageclef
+  tuberculosis task - the sgeast submission. In: Working Notes of {CLEF} 2017 -
+  Conference and Labs of the Evaluation Forum, Dublin, Ireland, September
+  11-14, 2017. (2017), \url{http://ceur-ws.org/Vol-1866/paper\_130.pdf}
+
+\end{thebibliography}
