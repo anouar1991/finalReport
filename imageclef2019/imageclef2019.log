@@ -1,15 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.6)  25 JUN 2019 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.11.8)  25 JUN 2019 23:46
 entering extended mode
-**./imageclef2019.tex
-(imageclef2019.tex
-LaTeX2e <2017-04-15>
-Babel <3.9t> and hyphenation patterns for 75 language(s) loaded.
-(llncs.cls
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**imageclef2019.tex
+(./imageclef2019.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+(./llncs.cls
 Document Class: llncs 2018/03/10 v2.20 
  LaTeX document class for Lecture Notes in Computer Science
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -24,8 +26,8 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
-Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \c@tracingmulticols=\count87
 \mult@box=\box26
 \multicol@leftmargin=\dimen103
@@ -73,10 +75,10 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \colbreak@box=\box51
 \mc@col@check@num=\count95
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\aliascnt.sty"
-Package: aliascnt 2016/05/16 v1.4 Alias counters (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/aliascnt.sty
+Package: aliascnt 2009/09/08 v1.3 Alias counters (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\carlisle\remreset.sty"))
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/remreset.sty))
 \c@chapter=\count96
 LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
 LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
@@ -128,46 +130,46 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
 \c@remark=\count115
 \headlineindent=\dimen124
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count116
 ))
 \Gin@req@height=\dimen125
 \Gin@req@width=\dimen126
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count117
 \float@exts=\toks19
 \float@box=\box54
 \@float@everytoks=\toks20
 \@floatcapt=\box55
-) (imageclef2019.aux)
+) (./imageclef2019.aux)
 \openout1 = `imageclef2019.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -182,8 +184,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count118
 \scratchdimen=\dimen127
@@ -196,51 +197,54 @@ LaTeX Font Info:    ... okay on input line 16.
 \MPnumerator=\count122
 \makeMPintoPDFobject=\count123
 \everyMPtoPDFconversion=\toks22
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -251,34 +255,43 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 46.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
- []
+LaTeX Warning: Citation ` ImageCLEFTB2018' on page 1 undefined on input line 57
+.
+
+
+LaTeX Warning: Citation ` ImageCLEFTBoverview2019' on page 1 undefined on input
+ line 57.
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-[2] <system.pdf, id=18, 882.29625pt x 291.0875pt>
+[2] <system.pdf, id=19, 882.29625pt x 291.0875pt>
 File: system.pdf Graphic file (type pdf)
  <use system.pdf>
-Package pdftex.def Info: system.pdf used on input line 103.
+Package pdftex.def Info: system.pdf used on input line 101.
 (pdftex.def)             Requested size: 347.12328pt x 170.71855pt.
  [3]
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
@@ -288,49 +301,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-[4 <./system.pdf>] <preprocess.pdf, id=36, 675.52374pt x 311.1625pt>
+[4 <./system.pdf>] <preprocess.pdf, id=37, 675.52374pt x 311.1625pt>
 File: preprocess.pdf Graphic file (type pdf)
 
 <use preprocess.pdf>
-Package pdftex.def Info: preprocess.pdf used on input line 120.
+Package pdftex.def Info: preprocess.pdf used on input line 118.
 (pdftex.def)             Requested size: 347.13069pt x 128.038pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 [5 <./preprocess.pdf>]
 
-pdfTeX warning: miktex-pdftex.exe (file ./lungnet3.pdf): PDF inclusion: found P
+pdfTeX warning: /usr/bin/pdflatex (file ./lungnet3.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<lungnet3.pdf, id=65, 513.92pt x 774.895pt>
+<lungnet3.pdf, id=66, 513.92pt x 774.895pt>
 File: lungnet3.pdf Graphic file (type pdf)
  <use lungnet3.pdf>
-Package pdftex.def Info: lungnet3.pdf used on input line 141.
+Package pdftex.def Info: lungnet3.pdf used on input line 139.
 (pdftex.def)             Requested size: 284.53105pt x 284.53105pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./lungnet3.pdf>] <semanticFeatures.pdf, id=77, 963.6pt x 542.025pt>
+ [6 <./lungnet3.pdf>] <semanticFeatures.pdf, id=78, 963.6pt x 542.025pt>
 File: semanticFeatures.pdf Graphic file (type pdf)
 
 <use semanticFeatures.pdf>
-Package pdftex.def Info: semanticFeatures.pdf used on input line 160.
+Package pdftex.def Info: semanticFeatures.pdf used on input line 158.
 (pdftex.def)             Requested size: 347.11629pt x 227.62413pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -345,108 +353,108 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ‹ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 [7 <./semanticFeatures.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
-<classification.pdf, id=92, 963.6pt x 456.70625pt>
+<classification.pdf, id=93, 963.6pt x 456.70625pt>
 File: classification.pdf Graphic file (type pdf)
  <use classification.pdf>
-Package pdftex.def Info: classification.pdf used on input line 178.
+Package pdftex.def Info: classification.pdf used on input line 176.
 (pdftex.def)             Requested size: 347.11629pt x 227.62083pt.
 
-<lstm.pdf, id=93, 948.54375pt x 517.935pt>
+<lstm.pdf, id=94, 948.54375pt x 517.935pt>
 File: lstm.pdf Graphic file (type pdf)
  <use lstm.pdf>
-Package pdftex.def Info: lstm.pdf used on input line 191.
+Package pdftex.def Info: lstm.pdf used on input line 189.
 (pdftex.def)             Requested size: 347.1202pt x 227.62338pt.
  [8 <./classification.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 [9 <./lstm.pdf>]
-Overfull \hbox (26.64542pt too wide) in paragraph at lines 235--236
+Overfull \hbox (26.64542pt too wide) in paragraph at lines 233--234
 []\OT1/cmr/m/n/10 SVR[]severity (bi-nary class: HIGH and LOW). An-other la-bel 
 called md[]Severity
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
 
 
-pdfTeX warning: miktex-pdftex.exe (file ./results_svr_test_auc.pdf): PDF inclus
+pdfTeX warning: /usr/bin/pdflatex (file ./results_svr_test_auc.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<results_svr_test_auc.pdf, id=155, 744.7825pt x 312.16624pt>
+<results_svr_test_auc.pdf, id=156, 744.7825pt x 312.16624pt>
 File: results_svr_test_auc.pdf Graphic file (type pdf)
 
 <use results_svr_test_auc.pdf>
-Package pdftex.def Info: results_svr_test_auc.pdf used on input line 289.
+Package pdftex.def Info: results_svr_test_auc.pdf used on input line 287.
 (pdftex.def)             Requested size: 341.44493pt x 227.62701pt.
 
 
-pdfTeX warning: miktex-pdftex.exe (file ./results_svr_test_accuracy.pdf): PDF i
+pdfTeX warning: /usr/bin/pdflatex (file ./results_svr_test_accuracy.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<results_svr_test_accuracy.pdf, id=156, 744.7825pt x 313.17pt>
+<results_svr_test_accuracy.pdf, id=157, 744.7825pt x 313.17pt>
 File: results_svr_test_accuracy.pdf Graphic file (type pdf)
 
 <use results_svr_test_accuracy.pdf>
-Package pdftex.def Info: results_svr_test_accuracy.pdf used on input line 298.
+Package pdftex.def Info: results_svr_test_accuracy.pdf used on input line 296.
 (pdftex.def)             Requested size: 341.44493pt x 199.17612pt.
  [11] [12 <./results_svr_test_auc.pdf> <./results_svr_test_accuracy.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 
 
-pdfTeX warning: miktex-pdftex.exe (file ./results_ctr_test_meanauc.pdf): PDF in
+pdfTeX warning: /usr/bin/pdflatex (file ./results_ctr_test_meanauc.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<results_ctr_test_meanauc.pdf, id=203, 744.7825pt x 296.10625pt>
+<results_ctr_test_meanauc.pdf, id=205, 744.7825pt x 296.10625pt>
 File: results_ctr_test_meanauc.pdf Graphic file (type pdf)
 
 <use results_ctr_test_meanauc.pdf>
-Package pdftex.def Info: results_ctr_test_meanauc.pdf used on input line 348.
+Package pdftex.def Info: results_ctr_test_meanauc.pdf used on input line 346.
 (pdftex.def)             Requested size: 341.44493pt x 227.62749pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
-[14 <./results_ctr_test_meanauc.pdf>] (imageclef2019.bbl
+[14 <./results_ctr_test_meanauc.pdf>] (./imageclef2019.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 10--13
 []\OT1/cmr/m/n/9 Resnet-50 and lungnet for tu-ber-cu-lo-sis sever-ity scor-ing.
  mosta-
@@ -458,30 +466,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--13
 i-ments.
  []
 
-[15]) [16] (imageclef2019.aux) ) 
+[15]) [16] (./imageclef2019.aux) ) 
 Here is how much of TeX's memory you used:
- 2069 strings out of 493324
- 28639 string characters out of 3139086
- 99348 words of memory out of 3000000
- 5586 multiletter control sequences out of 15000+200000
- 7456 words of font info for 27 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 39i,8n,25p,1438b,256s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on imageclef2019.pdf (16 pages, 1539859 bytes).
+ 2069 strings out of 494953
+ 28873 string characters out of 6180977
+ 94145 words of memory out of 5000000
+ 5332 multiletter control sequences out of 15000+600000
+ 7456 words of font info for 27 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 37i,8n,23p,1534b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt9.pfb>
+Output written on imageclef2019.pdf (16 pages, 1508360 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

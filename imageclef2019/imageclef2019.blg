@@ -1,6 +1,53 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: imageclef2019.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: imageclef2019.aux
+White space in argument---line 2 of file imageclef2019.aux
+ : \citation{ImageCLEFTB2017,
+ :                            ImageCLEFTB2018, ImageCLEFTBoverview2019}
+I'm skipping whatever remains of this command
 The style file: splncs04.bst
 Database file #1: ref.bib
 Warning--to sort, need author or key in med2image
 Warning--to sort, need author or key in anouargit
-(There were 2 warnings)
+You've used 11 entries,
+            2850 wiz_defined-function locations,
+            663 strings with 8498 characters,
+and the built_in function-call counts, 8780 in all, are:
+= -- 602
+> -- 565
+< -- 4
++ -- 229
+- -- 218
+* -- 681
+:= -- 1176
+add.period$ -- 12
+call.type$ -- 11
+change.case$ -- 152
+chr.to.int$ -- 0
+cite$ -- 13
+duplicate$ -- 679
+empty$ -- 640
+format.name$ -- 227
+if$ -- 1779
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 178
+newline$ -- 39
+num.names$ -- 18
+pop$ -- 380
+preamble$ -- 1
+purify$ -- 130
+quote$ -- 0
+skip$ -- 134
+stack$ -- 0
+substring$ -- 301
+swap$ -- 396
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 44
+warning$ -- 2
+while$ -- 33
+width$ -- 13
+write$ -- 108
+(There was 1 error message)
